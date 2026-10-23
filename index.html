@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akash Mittal | Program & Transformation Lead</title>
+<meta name="description" content="Akash Mittal — Vice President, Program Delivery & Data Governance Lead. 18+ years in Banking & Financial Services: transformation, application decommissioning, data lifecycle management and regulatory change.">
+<style>
+:root{
+  --navy:#0f2238; --navy-2:#1b3a5c; --accent:#b08d57; --ink:#1f2933; --muted:#5b6770;
+  --bg:#f6f7f9; --card:#ffffff; --line:#e1e5ea;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--navy-2)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(15,34,56,.97);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+nav .brand{color:#fff;font-family:var(--serif);font-size:1.15rem;letter-spacing:.04em;text-decoration:none}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px}
+nav ul a{color:#cfd8e3;text-decoration:none;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
+nav ul a:hover{color:#fff}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:84px 0 72px}
+.hero .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;margin:0 0 14px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,6vw,3.8rem);margin:0 0 10px;line-height:1.1}
+.hero .role{font-size:1.2rem;color:#dbe4ee;margin:0 0 20px;max-width:720px}
+.hero p.lead{max-width:720px;color:#c3cfdc;margin:0 0 30px}
+.hero .wrap{display:flex;align-items:center;justify-content:space-between;gap:48px}
+.hero .photo{flex:0 0 240px;width:240px;height:240px;border-radius:50%;object-fit:cover;object-position:40% 30%;border:4px solid var(--accent);box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 24px;border-radius:3px;font-size:.9rem;text-decoration:none;letter-spacing:.04em;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#14202e;font-weight:600}
+.btn.ghost{color:#fff}
+.btn:hover{opacity:.88}
+
+/* Metrics */
+.metrics{background:var(--card);border-bottom:1px solid var(--line)}
+.metrics .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.metric{padding:26px 14px;text-align:center;border-right:1px solid var(--line)}
+.metric:last-child{border-right:0}
+.metric b{display:block;font-family:var(--serif);font-size:1.9rem;font-weight:400;color:var(--navy)}
+.metric span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+
+/* Sections */
+section{padding:68px 0}
+section.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:400;font-size:1.9rem;color:var(--navy);margin:0 0 6px}
+h2::after{content:"";display:block;width:48px;height:2px;background:var(--accent);margin:12px 0 30px}
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:48px}
+.about p{margin:0 0 16px}
+.facts{background:var(--bg);border:1px solid var(--line);padding:22px 24px;border-radius:4px;align-self:start}
+.facts h3{margin:0 0 10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.facts ul{margin:0;padding:0;list-style:none}
+.facts li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.facts li:last-child{border:0}
+
+/* Competencies */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--navy-2);padding:22px;border-radius:3px}
+section.alt .card{background:var(--bg)}
+.card h3{margin:0 0 8px;font-family:var(--serif);font-weight:400;font-size:1.1rem;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+
+/* Timeline */
+.timeline{position:relative;margin-left:8px;padding-left:30px;border-left:2px solid var(--line)}
+.job{position:relative;margin-bottom:38px}
+.job::before{content:"";position:absolute;left:-39px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--navy-2)}
+.job.current::before{background:var(--accent);border-color:var(--accent)}
+.job .when{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:600}
+.job h3{margin:2px 0 2px;font-family:var(--serif);font-weight:400;font-size:1.3rem;color:var(--navy)}
+.job .org{color:var(--muted);font-size:.95rem;margin-bottom:10px}
+.job ul{margin:0;padding-left:20px}
+.job li{margin-bottom:6px}
+.job.compact li{font-size:.95rem}
+.award{display:inline-block;margin-top:8px;font-size:.78rem;color:var(--navy-2);background:#eef2f7;border:1px solid var(--line);padding:3px 10px;border-radius:12px}
+
+/* Two-col lists */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.cols h3{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:1.25rem;margin:0 0 14px}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:11px 0;border-bottom:1px solid var(--line)}
+.list li small{display:block;color:var(--muted)}
+
+/* Contact */
+.contact{background:var(--navy);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact h2::after{margin:12px auto 24px}
+.contact p{max-width:560px;margin:0 auto 26px;color:#c3cfdc}
+footer{background:#0a1726;color:#8fa0b3;text-align:center;padding:20px;font-size:.82rem}
+
+@media(max-width:860px){
+  .metrics .wrap{grid-template-columns:repeat(2,1fr)}
+  .metric{border-bottom:1px solid var(--line)}
+  .about,.cols,.grid{grid-template-columns:1fr}
+  .hero .wrap{flex-direction:column-reverse;align-items:flex-start;gap:28px}
+  .hero .photo{flex-basis:auto;width:150px;height:150px}
+  .hero{padding:48px 0}
+  nav ul{gap:12px}
+  nav ul li:last-child{display:none}
+  nav ul a{font-size:.75rem}
+  nav .brand{display:none}
+  section{padding:48px 0}
+}
+@media print{nav,.btns,.contact{display:none}body{background:#fff}.hero{color:#000;background:#fff;padding:20px 0}.hero *{color:#000!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Akash Mittal</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/Akash-Mittal-Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+   <div>
+    <p class="eyebrow">Banking &amp; Financial Services · Gurugram, India</p>
+    <h1>Akash Mittal</h1>
+    <p class="role">Vice President · Program Delivery &amp; Data Governance Lead<br>Transition, Decommissioning &amp; Transformation</p>
+    <p class="lead">Eighteen years delivering large-scale transformation, regulatory change and data lifecycle programmes — translating strategic ambition into measurable outcomes across Business, Technology, Risk and Compliance.</p>
+    <div class="btns">
+      <a class="btn primary" href="assets/Akash-Mittal-Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/akash-mmittal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn ghost" href="mailto:akash.mittal1984@gmail.com">Get in touch</a>
+    </div>
+   </div>
+    <img class="photo" src="assets/akash-mittal.jpg" alt="Akash Mittal">
+  </div>
+</header>
+
+<div class="metrics">
+  <div class="wrap">
+    <div class="metric"><b>18+</b><span>Years in BFSI</span></div>
+    <div class="metric"><b>1,000+</b><span>Applications in scope</span></div>
+    <div class="metric"><b>~£1.7M</b><span>Programme savings</span></div>
+    <div class="metric"><b>110</b><span>Critical assessments</span></div>
+    <div class="metric"><b>21K → 2K</b><span>Records to high-risk items</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Profile</h2>
+    <div class="about">
+      <div>
+        <p>Program and Transformation Lead with over 18 years in Banking &amp; Financial Services, delivering large-scale transition, transformation and regulatory programmes from initiation through stabilization.</p>
+        <p>At NatWest Group I led delivery governance for the <strong>Ulster Bank Withdrawal Programme</strong> — a global, cross-functional technology simplification and application decommissioning initiative — partnering with senior executives across Operations, Technology, Risk, Compliance and Vendor teams. By assessing business usage, regulatory obligations and retention requirements across a portfolio of 670+ applications, I contributed to approximately <strong>£1.7 million in programme savings</strong> while reducing technology complexity and operational risk.</p>
+        <p>My earlier career spans core banking migration (Finacle), card and ATM payment platforms, and enterprise test-maturity governance (TMMi). I am Scrum Master accredited and apply Generative AI responsibly to improve documentation, analysis and decision support.</p>
+      </div>
+      <aside class="facts">
+        <h3>At a glance</h3>
+        <ul>
+          <li><strong>Current focus</strong><br>Transition, decommissioning &amp; data governance</li>
+          <li><strong>Most recent</strong><br>NatWest Group (13 years)</li>
+          <li><strong>Domains</strong><br>Cards &amp; Payments, ATM, Core Banking</li>
+          <li><strong>Methods</strong><br>Agile / Scrum, Waterfall, TMMi</li>
+          <li><strong>Location</strong><br>Gurugram, Haryana, India</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="alt">
+  <div class="wrap">
+    <h2>Areas of Expertise</h2>
+    <div class="grid">
+      <div class="card"><h3>Program &amp; Project Leadership</h3><p>End-to-end delivery, integrated plans, milestones, dependencies, RAID management and committed-deliverable tracking.</p></div>
+      <div class="card"><h3>Transition Management</h3><p>Transition strategy and readiness, knowledge transfer, data migration, cutover planning, go-live and stabilization.</p></div>
+      <div class="card"><h3>Transformation &amp; Operational Excellence</h3><p>Process improvement, standardization, estate rationalization, target operating model design and benefits realization.</p></div>
+      <div class="card"><h3>Governance &amp; Executive Reporting</h3><p>Steering committee governance, executive dashboards (JIRA, Power BI) and status, risk and decision reporting to senior leadership.</p></div>
+      <div class="card"><h3>Data Governance &amp; Lifecycle</h3><p>GDPR-aligned retention, archival and automated destruction; data quality and control frameworks; audit readiness.</p></div>
+      <div class="card"><h3>Risk, Compliance &amp; Change</h3><p>Regulatory transformation, control frameworks, change impact assessment and escalation management.</p></div>
+      <div class="card"><h3>Stakeholder Management</h3><p>Primary contact for senior Business, Risk, Compliance, Operations and Technology stakeholders across global teams.</p></div>
+      <div class="card"><h3>Domain Knowledge</h3><p>Cards &amp; Payments, ATM systems, Finacle Core Banking, transaction processing and settlement.</p></div>
+      <div class="card"><h3>Tools &amp; Methods</h3><p>Agile/Scrum, Waterfall, JIRA, Confluence, Planview, Informatica ILM, Power BI, Microsoft Copilot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+
+      <div class="job current">
+        <div class="when">Mar 2023 – Jun 2026</div>
+        <h3>Vice President — Program Delivery, Business Analysis &amp; Data Governance Lead</h3>
+        <div class="org">NatWest Group · Ulster Bank Withdrawal Programme · Gurugram</div>
+        <ul>
+          <li>Led delivery governance for a large-scale banking transformation focused on technology stack simplification, application decommissioning, data governance and regulatory compliance.</li>
+          <li>Completed <strong>110 critical data and application assessments</strong>, informing system retirement, retention and migration decisions while reducing operational, technology and regulatory risk.</li>
+          <li>Designed and implemented <strong>50+ enterprise retention and archival solutions</strong>, including GDPR-aligned retention codes for the Irish jurisdiction and IPM-based automated destruction across 1,000+ applications; secured approvals across Business, Technology, Risk and Compliance.</li>
+          <li>Rationalized the technology estate from <strong>21,000+ data records to ~2,000 high-risk items</strong>, improving compliance oversight and prioritization.</li>
+          <li>Contributed to approximately <strong>£1.7M programme savings</strong> through application rationalization across a 670+ application portfolio.</li>
+          <li>Built executive governance dashboards and reporting frameworks giving leadership real-time visibility of risks, dependencies, milestones and decisions; established controls that sustained audit readiness.</li>
+        </ul>
+        <span class="award">Living Our Robust Values Award</span> <span class="award">Raise the Bar Award</span>
+      </div>
+
+      <div class="job">
+        <div class="when">Nov 2016 – Mar 2023</div>
+        <h3>Assistant Vice President — Lead Business Analyst &amp; Scrum Master</h3>
+        <div class="org">NatWest Group · Technology Controls, Assurance (Global Transformation) · Gurugram</div>
+        <ul>
+          <li>Delivered end-to-end data archiving and lifecycle management covering assessment, retention, archival, validation and governance.</li>
+          <li>Led application decommissioning, defining retention strategies, validation frameworks and compliance controls to securely retire legacy systems.</li>
+          <li>Established data governance, data quality and control frameworks that improved regulatory adherence and reduced compliance remediation effort.</li>
+          <li>Served as Scrum Master for cross-functional teams — delivery roadmaps, JIRA dashboards and sprint execution.</li>
+          <li>Translated regulatory and operational needs into business requirements, functional specifications, user stories and acceptance criteria.</li>
+        </ul>
+        <span class="award">Serving Customer LOV Award ×2</span> <span class="award">Working Together LOV Award ×3</span>
+      </div>
+
+      <div class="job compact">
+        <div class="when">Jan 2015 – Oct 2016</div>
+        <h3>Senior Test Analyst — Payments &amp; ATM Systems</h3>
+        <div class="org">NatWest Group · Gurugram</div>
+        <ul>
+          <li>Translated business and regulatory requirements for ATM and payment processing systems into certification and validation strategies.</li>
+          <li>Led ATM certification and release validation across cross-functional teams, delivering compliant production deployments.</li>
+        </ul>
+        <span class="award">STAR Award</span> <span class="award">GEM (Going the Extra Mile) Award</span>
+      </div>
+
+      <div class="job compact">
+        <div class="when">Nov 2013 – Dec 2014</div>
+        <h3>Quality Analyst — Test Process Improvement (TMMi)</h3>
+        <div class="org">NatWest Group · Gurugram</div>
+        <ul>
+          <li>Conducted enterprise-wide TMMi maturity assessments across multiple testing organizations, identifying capability gaps and operational risks.</li>
+          <li>Drove standardization and governance mechanisms that delivered measurable maturity gains and sustained audit readiness.</li>
+        </ul>
+      </div>
+
+      <div class="job compact">
+        <div class="when">Feb 2011 – Oct 2013</div>
+        <h3>Test Analyst — Payment Cards Industry</h3>
+        <div class="org">TSYS (Global Payments Inc.) · Noida</div>
+        <ul>
+          <li>Quality assurance for a global card and merchant management platform processing Visa, Mastercard and American Express for leading financial institutions.</li>
+          <li>Validated the end-to-end card lifecycle — issuance, transactions, settlement, rewards and promotions.</li>
+        </ul>
+      </div>
+
+      <div class="job compact">
+        <div class="when">Nov 2010 – Feb 2011</div>
+        <h3>Software Test Engineer — Financial Services Platform</h3>
+        <div class="org">Chetu, Inc. · Noida</div>
+        <ul>
+          <li>Quality assurance for a multi-service US digital payments platform (funds transfer, prepaid debit cards, electronic communications); managed the end-to-end defect lifecycle.</li>
+        </ul>
+      </div>
+
+      <div class="job compact">
+        <div class="when">Feb 2008 – Oct 2010</div>
+        <h3>Implementation Lead — Finacle Core Banking</h3>
+        <div class="org">Macreel Systems &amp; Services · Noida</div>
+        <ul>
+          <li>Led rollout of Finacle Core Banking across multiple bank branches — deployment, data migration, cutover planning and post-implementation support, with minimal operational disruption.</li>
+          <li>Managed and mentored a distributed team of 4–6 engineers; delivered end-user training and knowledge transfer.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="credentials" class="alt">
+  <div class="wrap">
+    <h2>Credentials</h2>
+    <div class="cols">
+      <div>
+        <h3>Certifications</h3>
+        <ul class="list">
+          <li>Scrum Master Accredited Certification<small>International Scrum Institute</small></li>
+          <li>Agile Project Management<small>Google (Coursera)</small></li>
+          <li>Business Analysis &amp; Process Management</li>
+          <li>Generative AI Boot Camp<small>National Skill Development Corporation</small></li>
+          <li>Google AI Essentials<small>Google (Coursera)</small></li>
+          <li>Fundamentals of Data Governance: Ownership, Privacy, Security<small>Coursera</small></li>
+          <li>Power BI for Beginners: Interactive Dashboard Fundamentals<small>Coursera</small></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <ul class="list">
+          <li>Master of Computer Applications (MCA)<small>Guru Nanak Khalsa Institute of Technology and Management Studies, Yamuna Nagar · 2005 – 2008</small></li>
+          <li>Bachelor's Degree, Computer Application<small>Guru Nanak Khalsa College, Yamuna Nagar · 2002 – 2005</small></li>
+        </ul>
+        <h3 style="margin-top:30px">Awards &amp; Recognition</h3>
+        <ul class="list">
+          <li>Living Our Robust Values Award · Raise the Bar Award<small>NatWest Group</small></li>
+          <li>Serving Customer LOV Award · Working Together LOV Award<small>NatWest Group</small></li>
+          <li>STAR Award · GEM (Going the Extra Mile) Award<small>NatWest Group — Payments Delivery Program</small></li>
+        </ul>
+        <h3 style="margin-top:30px">Languages</h3>
+        <ul class="list"><li>English (Professional) · Hindi (Native)</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's Connect</h2>
+    <p>I'm always interested in connecting with leaders and organizations seeking to unlock business value through strategic change, governance excellence and transformation-led growth.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn primary" href="mailto:akash.mittal1984@gmail.com">akash.mittal1984@gmail.com</a>
+      <a class="btn ghost" href="assets/Akash-Mittal-Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/akash-mmittal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Akash Mittal · Gurugram, Haryana, India</footer>
+
+</body>
+</html>
